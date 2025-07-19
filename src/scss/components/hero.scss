@@ -1,36 +1,73 @@
 .hero-section {
-  padding-top: 121px;
-  padding-bottom: 45px;
-  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background: #fff;
+  padding-top: 162px;
+  padding-bottom: 72px;
+  background-image: url(../img/hero/hero-bg-mob.png);
   background-repeat: no-repeat;
-  background-position: top 0 center;
-  background-size: cover;
+  background-position: bottom 80px center;
+  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 174px;
-    padding-bottom: 245px;
-    background-image: url(../img/hero/hero-bg-desk.jpg);
+    padding-top: 237px;
+    padding-bottom: 203px;
+    background-image: url(../img/hero/hero-bg-desk.png);
+    background-position: bottom 0 center;
   }
 }
 
 .hero-title {
-  margin-bottom: 15px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.08em;
+  text-transform: capitalize;
+  color: #361b14;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    margin-bottom: 16px;
+    font-size: 48px;
+    max-width: 624px;
   }
 }
 
 .hero-text {
-  text-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 500;
-  font-size: 22px;
-  line-height: 1.36364;
-  color: #edfcff;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: #361b14;
+  margin-bottom: 296px;
 
   @include media(desktop) {
-    font-size: 24px;
-    max-width: 746px;
+    font-size: 26px;
+    line-height: 1.38462;
+    margin-bottom: 58px;
+    max-width: 624px;
+  }
+}
+
+.hero-btn {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #0b7b3c;
+  border-radius: 12px;
+  padding: 19px 39px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    max-width: max-content;
   }
 }
